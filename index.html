@@ -16,11 +16,12 @@
 			<a href="#chat" class="top__link">Переписка</a>
 			<a href="#friend-list" class="top__link">Друзья</a>
 			<a href="#feed" class="top__link">Котолента</a>
+			<a href="#quote" class="top__link">Цитата дня</a>
 		</div>
 	</div>
 	<div class="body">
 		<div id="chat">
-			<h2 class="chat__title">Переписка</h2>
+			<div class="chat__title">Переписка</div>
 			<div class="chat__container">
 				<div class="message">
 					Привет! Как дела? Слушай, я думаю, пора обсудить это серьезное дело:
@@ -58,7 +59,8 @@
 			<div class="friend-list__container">
 				<div class="user">
 					<div class="user__name">
-						<div class="user__pic">LG</div>
+						<!-- Если у юзера нет картинки, то показывается его инициалы -->
+						<div class="user__pic" role="img" aria-label="Фотография Leanne Graham">LG</div>
 						<div class="user__full-name">Leanne Graham</div>
 					</div>
 					<a href="Sincere@april.biz">Sincere@april.biz</a>
@@ -135,7 +137,7 @@
 		<div class="user__pic">CB</div>
 	</div>
 	<div id="feed">
-		<h2 class="feed__title">Котолента</h2>
+		<div class="feed__title">Котолента</div>
 		<div class="feed__container">
 			<div class="post">
 				<img class="post__image" src="assets/img/cat-1.jpg" />
@@ -146,6 +148,10 @@
 				<div class="post__title">Еще один кот</div>
 			</div>
 		</div>
+	</div>
+	<div id="quote">
+		<div class="quotes__title">Цитата дня</div>
+		<div class="quote">Не бойся когда ты один — бойся когда ты ноль.<div><a href="https://citaty.ru/pacanskie/">Пацанский цитатник</a></div></div>
 	</div>
 	<div id="bottom">
 		<p>&copy; Bookface</p>

@@ -48,6 +48,8 @@ a, a:visited, a:active {
 
 .chat__title {
 	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 
 .chat__container {
@@ -155,6 +157,12 @@ a, a:visited, a:active {
 	align-items: center;
 }
 
+.feed__title {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
 .feed__container {
 	display: flex;
 	gap: 20px;
@@ -175,6 +183,24 @@ a, a:visited, a:active {
 	width: 200px;
 	height: 200px;
 	border-radius: 20px;
+}
+
+#quote {
+	display: flex;
+	flex-direction: column;
+	width: 60vw;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+.quotes__title {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.quote {
+	text-align: center;
 }
 
 #bottom {
