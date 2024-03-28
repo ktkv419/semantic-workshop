@@ -15,14 +15,14 @@
 			<a href="#" class="top__link">Главная</a>
 			<a href="#chat" class="top__link">Переписка</a>
 			<a href="#friend-list" class="top__link">Друзья</a>
-			<a href="#feed" class="top__link">Котолента</a>
+			<a href="#feed" class="top__link" aria-label="Перейти в раздел Котолента">Котолента</a>
 			<a href="#quote" class="top__link">Цитата дня</a>
 		</div>
 	</div>
-	<div class="body">
-		<div id="chat">
+	<div id="container">
+		<section id="chat">
 			<div class="chat__title">Переписка</div>
-			<div class="chat__container">
+			<article class="chat__container">
 				<div class="message">
 					Привет! Как дела? Слушай, я думаю, пора обсудить это серьезное дело:
 					React или Svelte?
@@ -48,18 +48,18 @@
 					Ага, а вот это я не отрицаю. Но Svelte - это просто гениальность в
 					своей простоте. Ты ведь видел, как он работает на уровне компиляции?
 				</div>
-			</div>
+			</article>
 			<div class="chat__send">
 				<input class="chat__input" placeholder="Введите сообщение..." type="text" />
 				<div class="chat__btn">Отправить</div>
 			</div>
-		</div>
+		</section>
 		<div id="friend-list">
 			<h2 class="friend-list__title">Друзья</h2>
 			<div class="friend-list__container">
 				<div class="user">
 					<div class="user__name">
-						<!-- Если у юзера нет картинки, то показывается его инициалы -->
+						<!-- Если у юзера нет картинки, то показываются его инициалы -->
 						<div class="user__pic" role="img" aria-label="Фотография Leanne Graham">LG</div>
 						<div class="user__full-name">Leanne Graham</div>
 					</div>
@@ -128,14 +128,15 @@
 					</div>
 					<a href="Rey.Padberg@karina.biz">Rey.Padberg@karina.biz</a>
 				</div>
-			</div>
 		</div>
 	</div>
+
 	<div id="last-users">
 		<div class="user__pic">LG</div>
 		<div class="user__pic">EH</div>
 		<div class="user__pic">CB</div>
 	</div>
+
 	<div id="feed">
 		<div class="feed__title">Котолента</div>
 		<div class="feed__container">
@@ -147,8 +148,8 @@
 				<img class="post__image" src="assets/img/cat-2.jpg" />
 				<div class="post__title">Еще один кот</div>
 			</div>
-		</div>
 	</div>
+
 	<div id="quote">
 		<div class="quotes__title">Цитата дня</div>
 		<div class="quote">Не бойся когда ты один — бойся когда ты ноль.<div><a href="https://citaty.ru/pacanskie/">Пацанский цитатник</a></div></div>
